@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        label{
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #td1{
+            text-align: center;
+        }
+        tr{
+            border-width: 2px ;
+            border-style: solid;
+        }
+        table, td{
+            border-width: 1px ;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        input{
+            width: 97%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;">Registration Form</h1>
+    <table style="margin-top: 50px; margin-left: 440px; margin-right: 350px;">
+        <Form>
+            <tr>
+                <td id="td1">
+                <label for="first_name">First Name:</label>
+                </td>
+                <td>
+                <input type="text" id="first_name" name="first_name" required>
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="last_name">Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="last_name" name="last_name" required>
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required> 
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="reenter_password">Re-enter Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="reenter_password" name="reenter_password" required>
+                </td>
+            </tr>
+            <tr>
+                <td id="td1" rowspan="2">
+                    <label>Gender:</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required style="width: auto;">
+                    <label for="male" class="no" style="font-weight: normal;">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="radio" id="female" name="gender" value="female" required style="width: auto;">
+                    <label for="female" class="no" style="font-weight: normal;">Female</label>
+                    </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="phone_number">Phone Number:</label>
+                </td>
+                <td>
+                    <input type="text" id="phone_number" name="phone_number">
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="address">Address:</label>
+                </td>
+                <td>
+                    <textarea id="address" name="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="state">State:</label>
+                </td>
+                <td>
+                    <input type="text" id="state" name="state">
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                    <label for="country">Country:</label>
+                </td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="USA">United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Australia">Australia</option>
+                        <option value="India">India</option>
+                       
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td id="td1">
+                <label>Languages Known:</label><br>
+                </td>
+                <td>
+                <input type="checkbox" id="english" name="languages_known[]" value="English" style="width: auto;">
+                <label for="english" class="no" style="font-weight: normal;">English</label>
+                <input type="checkbox" id="kannada" name="languages_known[]" value="Kannada" style="width: auto;">
+                <label for="kannada" class="no" style="font-weight: normal;">Kannada</label>
+                <input type="checkbox" id="hindi" name="languages_known[]" value="Hindi" style="width: auto;">
+                <label for="hindi" class="no" style="font-weight: normal;">Hindi</label>
+                <input type="checkbox" id="telugu" name="languages_known[]" value="Telugu" style="width: auto;">
+                <label for="telugu" class="no" style="font-weight: normal;" >Telugu</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="td2">
+                    <input type="checkbox" id="declaration" name="declaration" required style="padding-left: 0px; padding-right: 100px; width: auto;" >
+                    <label for="declaration" style="font-weight: normal;">Hereby I declare all the given details are true</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-right: 0px; padding-left: 290px;">
+                    <div>Log in to<a href="https://ethnus.com/" >Ethnus</a> website </div>
+                </td>
+        </Form>
+    </table>
+    <br>
+    <button style="margin-left: 640px; margin-right: 250px;">Register</button>
+</body>
+</html>

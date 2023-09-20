@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css task4</title>
+    <style>
+        .sidenav a{
+            margin-left: 0px;
+            text-decoration: none;
+            position: absolute;
+            left:-80px;
+            padding: 15px;
+            width:100px;
+            border-radius: 0 5px 5px 0;
+            font-size: 20px;
+            color: white;          
+            transition: 0.3s;  
+        }
+
+        .sidenav a:hover{
+            left:0;
+        }
+
+        #about{
+            top: 20px;
+            background-color: #04AA6D;
+        }
+#home{
+    top:80px;
+    background-color: #2196F3;
+}
+
+#blog{
+    top: 140px;
+    background-color:#f44336;
+}
+#contact{
+    top: 200px;
+    background-color:  #555;
+}
+    </style>
+</head>
+<body>
+    <div class="sidenav" id="sidenav">
+    <a href="#" id="about">About</a>
+    <a href="#" id="home">Home</a>
+    <a href="#" id="blog">Blog</a>
+    <a href="#" id="contact">Contact</a>
+    </div>
+    <div>
+    <h2 style="margin-left: 80px;">Hoverable SideNavBar</h2>
+    <p style="margin-left: 80px;">Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+</body>
+</html>

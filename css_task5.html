@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_task5</title>
+    <style>
+        body{
+            background-color: rgba(202, 215, 22, 0.829);
+            color:rgb(158, 13, 124);
+        }
+        #l{
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            
+        }
+        #l a{
+            padding:0;
+            text-decoration: none;
+            position: absolute;
+            left:10px;
+            width:100px;
+            font-size: 20px;
+            color: rgb(12, 39, 217);          
+            transition: 0.3s; 
+            background-color: rgb(255, 255, 255);
+            padding-right:8px;
+            border-right: 17px solid black;
+            margin-left: 40px;
+        }
+        #l a:hover{
+            color: purple;
+        }
+        #sec{
+            margin-top: 50px;
+            margin-left: 240px;
+            border-bottom: 1px dotted ;
+            font-weight: bold;
+        }
+        #home{
+            top:80px;
+        }
+        #mus{
+            top:110px;
+        }
+        #town{
+            top:140px;
+        }
+        #ll{
+            top:170px;
+        }
+    </style>
+</head>
+<body>
+    <div id="l">
+        <a href="#" id="home">Home page</a>
+        <a href="#" id="mus">Musings</a>
+        <a href="#" id="town">My town</a>
+        <a href="#" id="ll">Links</a>
+    </div>
+   
+    <div id="sec">
+    <h1 style="font-family:Arial, Helvetica, sans-serif ; margin-left: 1px;">My first styled Page</h1>
+    <p>Welcome to my styled page!
+        <br>
+        It lacks images,but atleast it has styles. And it <br>has links even if they don't go anywhere... 
+    </p>
+    <p>There should be more here, but I don't know what yet.</p>
+    </div>
+    <p style="font-style: italic; font-family:Georgia, 'Times New Roman', Times, serif; margin-left: 240px;">Made 5 April 2004<br>
+        by myself</p>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_task6</title>
+    <style>
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+
+        #us,
+        #pas {
+            font-weight: normal; 
+        }
+
+        #d1 {
+            width: 310px;
+            margin: auto;
+            margin-top: 50px;
+            height: auto; 
+        }
+
+        #remember {
+            background-color: rgb(65, 131, 151);
+            border: 1px solid blue;
+        }
+
+        li input {
+            width: 98%;
+            background-color: white;
+            border: 0.5px gray solid;
+            border-radius: 0;
+        }
+
+        #re {
+            font-weight: lighter;
+        }
+
+        img {
+            margin: 20px auto; 
+            height: auto; 
+            display: block; 
+        }
+
+        #cancel-forgot-container {
+            display: flex;
+            justify-content: space-between;
+            width: 310px;
+            margin: auto;
+            border-top: 1px solid grey;
+            background-color: gainsboro;
+            padding: 10px 0; 
+        }
+
+        #cancel-button {
+            background-color: red;
+            color: white;
+            border: none; 
+            border-radius: 4px;
+        }
+
+        #forgot-password {
+            margin-top: 0; 
+        }
+    </style>
+</head>
+<body>
+    <img src="women_icon.png" alt="user">
+    <div id="d1">
+        <li><label for="Username" id="us">Username</label></li>
+        <li><input type="text" id="Username" name="Username" placeholder="Enter Username"></li>
+        <br>
+        <li><label for="Password" id="pas">Password</label></li>
+        <li><input type="password" id="Password" name="Password" placeholder="Enter Password"></li>
+        <br>
+        <button style="color: white; background-color: green; border: none; width: 100%; margin: auto;">Login</button>
+        <br>
+        <br>
+        <li>
+            <input type="checkbox" id="remember" name="remember" style="width: auto;">
+            <label for="remember" id="re">Remember me</label>
+        </li>
+    </div>
+
+    <!-- Container for Cancel and Forgot Password -->
+    <div id="cancel-forgot-container">
+        <button id="cancel-button">Cancel</button>
+        <div id="forgot-password">Forgot <a href="#">password?</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css task2</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 70px;
+            height: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 50px;
+            padding-top: 10px;
+
+        }
+    ul{
+        list-style-type: none;
+        border: 2px hidden;
+        background-color: rgba(104, 211, 238, 0.519);
+        width: 70px;
+        height: 100px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    li a{
+        display: block;
+        text-decoration: none;
+        color:#213be5;
+
+    }
+
+    li a:hover{
+        color: aliceblue;
+        background-color: rgb(245, 124, 19);
+    }
+
+    h1{
+        color: black;
+        text-align: center;
+    }
+
+    #ul1{
+        list-style-type: none;
+        border: 2px hidden;
+        background-color: rgba(166, 179, 182, 0.519);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #d1{
+        width: 30%;
+        height: 100%;
+        padding:0;
+    }
+
+    .li1{
+        display: inline-block;
+        border-right: 1px solid #213be5;
+        padding: 0px 16px;
+        margin: 0;
+    }
+
+    .li1:last-child{
+        border-right: none;
+    }
+    .li1 li a{
+        color: #213be5;
+        text-decoration: none;
+        text-align: center;
+        padding: 14px 0;
+        
+    }
+
+    .li1 a:hover{
+        color: aliceblue;
+        background-color:rgb(169, 165, 161) ;
+    }
+
+    </style>
+    
+</style>
+</head>
+<body>
+    <h1>Vertical Navigation Bar</h1>
+    <div>
+    <navbar>
+       <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Bootstrap</a></li>
+       </ul>
+    </navbar>
+    </div>
+
+    <h1>Horizontal Navigation Bar</h1>
+    <div id="d1">
+    <navbar>
+       <ul id="ul1">
+        <li class="li1"><a href="#">Home</a></li>
+        <li class="li1"><a href="#">Java</a></li>
+        <li class="li1"><a href="#">CSS</a></li>
+        <li class="li1"><a href="#">HTML</a></li>
+       </ul>
+    </navbar>
+    </div>
+
+</body>
+</html>
